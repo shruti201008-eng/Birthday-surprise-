@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Buddhu 💙</title>
+
+<title>Page 2 💙</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 height:100vh;
 display:flex;
 justify-content:center;
@@ -15,57 +21,60 @@ align-items:center;
 background:#050816;
 font-family:Arial,sans-serif;
 color:white;
+overflow:hidden;
 }
 
 .card{
 width:90%;
 max-width:500px;
-padding:30px;
-border-radius:20px;
+padding:35px;
 text-align:center;
 background:#111827;
-box-shadow:0 0 25px #3b82f6;
+border-radius:25px;
+box-shadow:0 0 30px #3b82f6;
+animation:fade 1.5s;
 }
 
 h1{
 color:#60a5fa;
+font-size:38px;
+margin-bottom:20px;
 }
 
 p{
-font-size:20px;
+font-size:23px;
 line-height:1.8;
 }
 
 button{
-margin-top:20px;
-padding:15px 35px;
-font-size:18px;
+margin-top:30px;
+padding:15px 40px;
+font-size:20px;
 border:none;
-border-radius:30px;
+border-radius:35px;
 background:#2563eb;
 color:white;
 cursor:pointer;
 }
-</style>
 
+@keyframes fade{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
 </head>
 
 <body>
 
 <div class="card">
 
-<h1>Hey Buddhu 💙</h1>
+<h1>💙 Hey Buddhu</h1>
 
 <p>
-Aaj tera special day hai. 🥳<br><br>
+Aaj tumhare liye...<br><br>
 
-Bas itna kehna tha ki...<br>
-
-Tu hamesha hasta rahe 😊<br><br>
-
-Jo bhi sapne hain,<br>
-
-Wo sab poore ho. ✨
+Ek chhota sa surprise<br>
+prepare kiya hai. ✨
 </p>
 
 <button onclick="location.href='page3.html'">
