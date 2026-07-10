@@ -1,76 +1,92 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Happy Birthday 💙</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 3 💙</title>
 
 <style>
-body{
+*{
 margin:0;
-background:#081229;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
-font-family:Arial;
+background:#050816;
+font-family:Arial,sans-serif;
 color:white;
+overflow:hidden;
 }
 
 .card{
 width:90%;
 max-width:500px;
-background:#111827;
-padding:30px;
-border-radius:20px;
+padding:35px;
 text-align:center;
-box-shadow:0 0 30px #2563eb;
+background:#111827;
+border-radius:25px;
+box-shadow:0 0 30px #3b82f6;
+animation:fade 1.5s;
 }
 
 h1{
+font-size:36px;
 color:#60a5fa;
+margin-bottom:20px;
 }
 
 p{
-font-size:20px;
-line-height:1.8;
+font-size:24px;
+line-height:1.9;
 }
 
 button{
-margin-top:20px;
-padding:15px 35px;
-font-size:18px;
+margin-top:30px;
+padding:15px 40px;
+font-size:20px;
 border:none;
-border-radius:30px;
+border-radius:35px;
 background:#2563eb;
 color:white;
 cursor:pointer;
 }
-</style>
 
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(.9);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+</style>
 </head>
 
 <body>
 
 <div class="card">
 
-<h1>✨ Buddhu ✨</h1>
+<h1>🙈 Ready?</h1>
 
 <p>
+Pehle aankhen band karo...<br><br>
 
-Aaj sirf ek wish...
+Aur 3 tak count karo...<br><br>
 
-Hamesha smile karte rehna 😊💙
-
-Aur jo bhi chaho...
-
-Wo sab tumhe mile.
-
-Happy Birthday once again 🎂🎁
-
+<b>3... 2... 1... ✨</b>
 </p>
 
 <button onclick="location.href='page4.html'">
-Final Surprise 🎁
+Done ✨
 </button>
 
 </div>
