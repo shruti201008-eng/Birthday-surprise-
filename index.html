@@ -1,91 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Budhhu 💙</title>
+<title>For Buddhu 💙</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
+margin:0;
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 background:#050816;
-overflow:hidden;
 font-family:Arial,sans-serif;
 color:white;
 }
 
-.stars{
-position:fixed;
-width:100%;
-height:100%;
-background:
-radial-gradient(circle,#4fc3ff 1px,transparent 1px);
-background-size:40px 40px;
-animation:move 20s linear infinite;
-opacity:.6;
-}
-
-@keyframes move{
-from{transform:translateY(0);}
-to{transform:translateY(40px);}
-}
-
 .card{
-position:relative;
-z-index:2;
-text-align:center;
-background:rgba(0,0,0,.45);
-padding:35px;
+width:90%;
+max-width:500px;
+padding:30px;
 border-radius:20px;
-backdrop-filter:blur(8px);
-box-shadow:0 0 25px #2196f3;
+text-align:center;
+background:#111827;
+box-shadow:0 0 25px #3b82f6;
 }
 
 h1{
-font-size:42px;
-color:#64b5ff;
-margin-bottom:10px;
+color:#60a5fa;
 }
 
 p{
 font-size:20px;
-margin-top:10px;
+line-height:1.8;
 }
 
 button{
-margin-top:25px;
-padding:12px 30px;
+margin-top:20px;
+padding:15px 35px;
+font-size:18px;
 border:none;
 border-radius:30px;
-background:#1976d2;
+background:#2563eb;
 color:white;
-font-size:18px;
 cursor:pointer;
 }
-
 </style>
+
 </head>
 
 <body>
 
-<div class="stars"></div>
-
 <div class="card">
 
-<h1>Happy Birthday Budhhu 💙</h1>
+<h1>Hey Buddhu 💙</h1>
 
-<p>Tap below to begin your surprise...</p>
+<p>
+Aaj tera special day hai. 🥳<br><br>
 
-<button>Start ✨</button>
+Bas itna kehna tha ki...<br>
+
+Tu hamesha hasta rahe 😊<br><br>
+
+Jo bhi sapne hain,<br>
+
+Wo sab poore ho. ✨
+</p>
+
+<button onclick="location.href='page3.html'">
+Next ➜
+</button>
 
 </div>
 
