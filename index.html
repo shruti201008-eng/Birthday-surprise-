@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday!</title>
+
+<style>
+body{
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(135deg,#ffd6ec,#fff7b3);
+font-family:Arial;
+overflow:hidden;
+}
+
+.card{
+text-align:center;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.2);
+animation:pop 1s;
+}
+
+h1{
+color:#ff4f8b;
+font-size:45px;
+}
+
+p{
+font-size:22px;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+background:#ff4f8b;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+}
+
+@keyframes pop{
+from{transform:scale(.5);opacity:0;}
+to{transform:scale(1);opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<h2 id="name">Your Name</h2>
+
+<p>
+Wishing you lots of happiness, success and smiles! 💖
+</p>
+
+<button onclick="alert('Have an amazing birthday! 🎉🎁❤️')">
+Open Gift 🎁
+</button>
+
+</div>
+
+</body>
+</html>
