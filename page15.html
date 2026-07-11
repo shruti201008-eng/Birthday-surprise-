@@ -14,7 +14,32 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 }
+<script>
+// Fireworks 🎆
+function createFirework(){
+    const fire=document.createElement("div");
+    fire.innerHTML="✨";
+    fire.style.position="fixed";
+    fire.style.left=Math.random()*100+"vw";
+    fire.style.top=Math.random()*100+"vh";
+    fire.style.fontSize=(20+Math.random()*30)+"px";
+    fire.style.pointerEvents="none";
+    fire.style.animation="boom 1.5s linear forwards";
+    document.body.appendChild(fire);
 
+    setTimeout(()=>fire.remove(),1500);
+}
+setInterval(createFirework,300);
+
+const style=document.createElement("style");
+style.innerHTML=`
+@keyframes boom{
+0%{transform:scale(.2);opacity:1;}
+100%{transform:scale(3);opacity:0;}
+}
+`;
+document.head.appendChild(style);
+</script>
 body{
 height:100vh;
 display:flex;
@@ -148,6 +173,22 @@ made your day just a little more special. 💙
 <p style="font-size:28px;">
 
 🎂 Have an Amazing Birthday! 🎂
+  <h2 style="margin-top:35px;color:#60a5fa;">
+💙 Thank You For Reaching The End 💙
+</h2>
+
+<p style="font-size:22px;">
+This surprise was made just for you.<br><br>
+I hope today brings you lots of smiles 😊,<br>
+happiness 💙,<br>
+and unforgettable memories ✨.<br><br>
+
+Happy Birthday once again, Buddhu! 🎂🎉
+</p>
+
+<h3 style="margin-top:30px;color:#93c5fd;">
+— Made with 💙 by Shruti
+</h3>
 
 </p>
 
