@@ -3,61 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Happy Birthday 💙</title>
+<title>🎂 Happy Birthday Buddhu 💙</title>
 
 <style>
 
-body{
+*{
 margin:0;
 padding:0;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:linear-gradient(135deg,#020617,#0f172a,#1e3a8a);
+box-sizing:border-box;
 font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#020617,#08142d,#1e3a8a);
+color:white;
 overflow:hidden;
 }
 
-.card{
-width:90%;
-max-width:600px;
-background:#071327;
-padding:40px;
-border-radius:25px;
+.slide{
+display:none;
+height:100vh;
+padding:30px;
+justify-content:center;
+align-items:center;
+flex-direction:column;
 text-align:center;
-box-shadow:0 0 35px #3b82f6;
-animation:fade 1.5s;
+animation:fade .8s;
+}
+
+.slide.active{
+display:flex;
+}
+
+.card{
+max-width:650px;
+width:92%;
+padding:35px;
+background:rgba(10,18,40,.9);
+border-radius:25px;
+box-shadow:0 0 30px #3b82f6;
 }
 
 h1{
 font-size:42px;
 color:#60a5fa;
-margin-bottom:15px;
+margin-bottom:20px;
 }
 
 p{
 font-size:22px;
-color:white;
 line-height:1.8;
+margin:20px 0;
 }
 
 button{
-margin-top:35px;
-padding:16px 45px;
-font-size:22px;
+margin-top:20px;
+padding:14px 38px;
+font-size:20px;
 border:none;
 border-radius:40px;
 background:#2563eb;
 color:white;
 cursor:pointer;
-transition:.3s;
 }
 
 button:hover{
-transform:scale(1.08);
 background:#3b82f6;
+}
+
+.progress{
+position:fixed;
+top:15px;
+right:20px;
+font-size:18px;
+color:#93c5fd;
 }
 
 @keyframes fade{
@@ -71,31 +90,558 @@ transform:translateY(0);
 }
 }
 
-</style>
+.star{
+position:absolute;
+color:white;
+animation:twinkle 2s infinite;
+}
 
+@keyframes twinkle{
+0%,100%{opacity:.3;}
+50%{opacity:1;}
+}
+
+</style>
 </head>
 
 <body>
 
+<div class="progress" id="progress">
+1 / 15
+</div>
+
+<div class="star" style="top:8%;left:10%;">✨</div>
+<div class="star" style="top:18%;right:12%;">⭐</div>
+<div class="star" style="bottom:14%;left:15%;">✨</div>
+<div class="star" style="bottom:12%;right:10%;">⭐</div>
+
+<!-- PAGE 1 -->
+
+<div class="slide active">
+
 <div class="card">
 
-<h1>Happy Birthday Buddhu 💙</h1>
+<h1>🎂 Happy Birthday Buddhu 💙</h1>
 
 <p>
-Welcome...✨
-<br><br>
 
-Aaj tumhare liye ek chhoti si journey ready hai.
-<br><br>
+Welcome...
 
-Har page par ek surprise milega...
+Aaj tumhare liye
+
+ek chhoti si birthday journey
+
+ready hai. ✨
+
 </p>
 
-<button onclick="location.href='page2.html'">
+<button onclick="nextSlide()">
+
 Start 💙
+
 </button>
 
 </div>
 
+</div>
+
+<!-- PAGE 2 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>😊</h1>
+
+<p>
+
+Sabse pehle...
+
+Smile karo. 😊
+
+Kyuki aaj ka din
+
+sirf tumhara hai.
+
+</p>
+
+<button onclick="nextSlide()">
+
+Next ➜
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 3 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>🙈</h1>
+
+<p>
+
+Ab 5 seconds ke liye
+
+aankhen band karo...
+
+Ready?
+
+</p>
+
+<button onclick="nextSlide()">
+
+Done ✔
+
+</button>
+
+</div>
+
+</div>
+<!-- PAGE 4 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>👀</h1>
+
+<p>
+
+Ab dheere se...
+
+Aankhen khol lo...
+
+3...
+
+2...
+
+1... ✨
+
+</p>
+
+<button onclick="nextSlide()">
+
+Open 👀
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 5 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>🎉 Surprise!! 🎉</h1>
+
+<p>
+
+Happy Birthday!! 🥳
+
+Ye surprise
+
+sirf tumhare liye hai. 💙
+
+</p>
+
+<button onclick="nextSlide()">
+
+Wow ✨
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 6 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>🎂</h1>
+
+<p>
+
+Birthday bina cake ke...
+
+Complete nahi hota. 😊
+
+</p>
+
+<button onclick="nextSlide()">
+
+Cake 🎂
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 7 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>🕯️</h1>
+
+<p>
+
+Ab candles blow karo...
+
+Aur ek wish bhi maang lena. ✨
+
+</p>
+
+<button onclick="nextSlide()">
+
+Blow 🌬️
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 8 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>💭</h1>
+
+<p>
+
+Wish maang li...? 😊
+
+Ab usse secret hi rehne dena. 🤫💙
+
+</p>
+
+<button onclick="nextSlide()">
+
+Next ➜
+
+</button>
+
+</div>
+
+</div>
+<!-- PAGE 9 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>🎁</h1>
+
+<p>
+
+Ab ek chhota sa gift hai...
+
+Ready ho? 😊
+
+</p>
+
+<button onclick="nextSlide()">
+
+Open Gift 🎁
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 10 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>💙</h1>
+
+<p>
+
+Is gift ke andar...
+
+Koi mehengi cheez nahi...
+
+Bas dil se nikli hui
+
+ek birthday wish hai. ✨
+
+</p>
+
+<button onclick="nextSlide()">
+
+Continue ➜
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 11 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>💌</h1>
+
+<p>
+
+I hope...
+
+Tum hamesha haste raho. 😊
+
+Tumhare saare dreams
+
+ek din zaroor poore hon.
+
+Aur life tumhe bahut saari
+
+khushiyan de. 💙
+
+</p>
+
+<button onclick="nextSlide()">
+
+Next ➜
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 12 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>🎊🥳</h1>
+
+<p>
+
+Aaj ka din...
+
+Sirf enjoy karna.
+
+Smile karna.
+
+Aur bahut saari
+
+beautiful memories banana. ✨
+
+</p>
+
+<button onclick="nextSlide()">
+
+Celebrate 🎉
+
+</button>
+
+</div>
+  <!-- PAGE 13 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>💙 Thank You</h1>
+
+<p>
+
+Thank you...
+
+Itni der tak is
+
+chhoti si birthday journey
+
+ka part banne ke liye. 😊
+
+Bas ek surprise aur...
+
+</p>
+
+<button onclick="nextSlide()">
+
+One Last Step ➜
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 14 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>✨ One Last Wish ✨</h1>
+
+<p>
+
+No matter where life takes you...
+
+Always stay happy,
+
+healthy,
+
+kind,
+
+and keep smiling. 💙
+
+Ready for the final page?
+
+</p>
+
+<button onclick="nextSlide()">
+
+Final Surprise 🎁
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 15 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h1>🎂 Happy Birthday Buddhu 💙</h1>
+
+<p>
+
+Another year...
+
+Another chapter...
+
+Another chance to smile bigger.
+
+<br><br>
+
+May every dream come true.
+
+May every prayer be answered.
+
+May every day bring happiness,
+
+good health,
+
+peace,
+
+success,
+
+and countless beautiful memories.
+
+<br><br>
+
+Never stop smiling. 😊
+
+Never stop believing in yourself.
+
+You are stronger than you think,
+
+and brighter than you know.
+
+<br><br>
+
+Thank you for completing this little birthday journey.
+
+I hope this small surprise
+
+made your special day
+
+a little more special. 💙
+
+<br><br>
+
+🎉 Happy Birthday Once Again! 🎉
+
+</p>
+
+<p style="color:#93c5fd;font-size:18px;">
+
+Made with 💙 Especially For You
+
+</p>
+
+<button onclick="showFirst()">
+
+Start Again 🔄
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+const slides=document.querySelectorAll(".slide");
+const progress=document.getElementById("progress");
+
+let current=0;
+
+function update(){
+
+slides.forEach((s,i)=>{
+
+s.classList.toggle("active",i===current);
+
+});
+
+progress.innerHTML=(current+1)+" / "+slides.length;
+
+}
+
+function nextSlide(){
+
+if(current<slides.length-1){
+
+current++;
+
+update();
+
+}
+
+}
+
+function showFirst(){
+
+current=0;
+
+update();
+
+}
+
+update();
+
+</script>
+
 </body>
 </html>
+
+</div>
