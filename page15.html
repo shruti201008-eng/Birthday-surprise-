@@ -1,13 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Happy Birthday 💙</title>
 
 <style>
 
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
 height:100vh;
@@ -16,25 +22,31 @@ justify-content:center;
 align-items:center;
 background:linear-gradient(135deg,#020617,#0f172a,#1e3a8a);
 font-family:Arial,sans-serif;
-color:white;
 overflow:hidden;
+color:white;
 }
 
 .card{
-width:92%;
-max-width:600px;
-padding:40px;
-background:#111827;
-border-radius:25px;
+width:90%;
+max-width:650px;
+padding:45px;
+border-radius:30px;
+background:rgba(17,24,39,.92);
+box-shadow:0 0 35px #3b82f6;
 text-align:center;
-box-shadow:0 0 40px #3b82f6;
-animation:zoom 1.5s;
+animation:show 1.5s ease;
 }
 
 h1{
-font-size:45px;
+font-size:48px;
 color:#60a5fa;
 margin-bottom:20px;
+}
+
+h2{
+font-size:28px;
+margin-bottom:25px;
+color:white;
 }
 
 p{
@@ -42,21 +54,41 @@ font-size:22px;
 line-height:1.9;
 }
 
-.end{
-margin-top:25px;
-font-size:18px;
-opacity:.8;
+.line{
+margin:20px 0;
+height:2px;
+background:#3b82f6;
 }
 
-@keyframes zoom{
+.footer{
+margin-top:30px;
+font-size:18px;
+color:#93c5fd;
+}
+
+@keyframes show{
+
 from{
 opacity:0;
 transform:scale(.7);
 }
+
 to{
 opacity:1;
 transform:scale(1);
 }
+
+}
+
+.star{
+position:absolute;
+color:white;
+animation:twinkle 2s infinite;
+}
+
+@keyframes twinkle{
+0%,100%{opacity:.2;}
+50%{opacity:1;}
 }
 
 </style>
@@ -65,31 +97,61 @@ transform:scale(1);
 
 <body>
 
+<div class="star" style="top:10%;left:15%;">✨</div>
+<div class="star" style="top:20%;right:18%;">⭐</div>
+<div class="star" style="bottom:18%;left:20%;">✨</div>
+<div class="star" style="bottom:12%;right:15%;">⭐</div>
+
 <div class="card">
 
-<h1>🎂 Happy Birthday Buddhu 💙</h1>
+<h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+
+<h2>💙 Buddhu 💙</h2>
+
+<div class="line"></div>
 
 <p>
 
-May this new year of your life bring you...
+Another year...
 
-✨ Endless happiness
+Another chapter...
 
-🌸 Beautiful memories
-
-💪 Good health
-
-😊 Lots of smiles
-
-🎯 Success in everything you do.
+Another chance to smile bigger,
+dream higher,
+and live happier. 💙
 
 <br><br>
 
-Enjoy your special day! 🥳
+May every day bring you
+peace,
+success,
+good health,
+and countless beautiful memories.
+
+<br><br>
+
+Keep smiling 😊
+
+Keep shining ✨
+
+Stay exactly the amazing person you are.
+
+<br><br>
+
+I hope this little surprise
+made your day just a little more special. 💙
 
 </p>
 
-<div class="end">
+<div class="line"></div>
+
+<p style="font-size:28px;">
+
+🎂 Have an Amazing Birthday! 🎂
+
+</p>
+
+<div class="footer">
 
 Made with 💙 especially for you.
 
